@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compute with Ram | Your Gateway to Computer Science</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        header .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        header img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+        /* Navigation links styling */
+        .nav-links {
+            margin-top: 10px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #282c34, #61dafb);
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .cta-button {
+            background-color: #61dafb;
+            color: #282c34;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        /* "Something is Coming" styling */
+        .coming-soon {
+            background-color: #282c34;
+            color: #fff;
+            padding: 60px 20px;
+            border-radius: 10px;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+        }
+        .coming-soon h2 {
+            font-size: 2em;
+            color: #61dafb;
+        }
+        .coming-soon p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .countdown {
+            font-size: 2em;
+            font-weight: bold;
+            color: #61dafb;
+        }
+        /* Footer links */
+        .footer-links {
+            margin-top: 20px;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
+            display: inline-flex;
+            align-items: center;
+        }
+        .footer-links img {
+            height: 20px;
+            width: 20px;
+            margin-right: 8px;
+        }
+        footer .footer-logo {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="Untitled design.png" alt="Logo Left">
+            <h1>Compute with Ram</h1>
+            <img src="Untitled design.png" alt="Logo Right">
+        </div>
+        <div class="nav-links">
+            <a href="About.html">About RAM</a>
+            <a href="#subscribe">Subscribe</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empowering Your Computer Science Journey</h1>
+        <p>Dive into CS concepts with easy-to-understand lectures for students and tech enthusiasts.</p>
+        <a href="https://www.youtube.com/channel/UC2Eo1XA4BJ-4Zzyy3MWp92Q" class="cta-button">Subscribe on YouTube</a>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon section">
+        <h2>🚀 Something Exciting is Coming Soon!</h2>
+        <p>Get ready for exclusive content, interactive tutorials, and deeper insights into the world of computer science!</p>
+        <p class="countdown">Launching in: <span id="countdown">Few Days</span></p>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="section">
+        <h2>Stay Updated!</h2>
+        <p>Join my Youtube channel for the latest videos and updates.</p>
+        <a href="https://www.youtube.com/channel/UC2Eo1XA4BJ-4Zzyy3MWp92Q" class="cta-button">Subscribe</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on:</p>
+        <div class="footer-links">
+            <a href="https://www.instagram.com/computewithram/">
+                <img src="instagram.png" alt="Instagram Logo">Instagram
+            </a>
+            |
+            <a href="https://twitter.com/computewithram">
+                <img src="twitter.png" alt="Twitter Logo">Twitter
+            </a>
+            |
+            <a href="https://www.facebook.com/ComputewithRam">
+                <img src="facebook.png" alt="Facebook Logo">Facebook
+            </a>
+        </div>
+        <p>&copy; 2024 <img src="Untitled design.png" alt="Footer Logo" class="footer-logo"> Compute with Ram. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Countdown Script
+        const countdownElement = document.getElementById("countdown");
+        let daysLeft = 5;
+
+        setInterval(() => {
+            if (daysLeft > 0) {
+                daysLeft -= 1;
+                countdownElement.innerText = `${daysLeft} Days`;
+            } else {
+                countdownElement.innerText = "Launching Today!";
+            }
+        }, 86400000); // Update daily (86400000 ms = 1 day)
+    </script>
+
+</body>
+</html>
